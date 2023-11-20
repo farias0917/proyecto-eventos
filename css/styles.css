@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #383737;
+}
+
+.eventos{
+    width: 900px;
+    margin: 10px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.eventos .titulo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.eventos h1{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.eventos img{
+    width: 40px;
+}
+
+.formulario{
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form input{
+    margin-bottom: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.formulario form input[type="submit"]{
+    background-color: rgb(41, 34, 34);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.listaEventos2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.listaEventos2 .evento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(244, 244, 244);
+}
+
+.listaEventos2 .evento .dias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaEventos2 .evento .dias .texto{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.listaEventos2 .evento .dias .diasFaltantes{
+    color: #5B86E5;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.listaEventos2 .evento .nombreEvento{
+    font-weight: bold;
+    width: auto;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 30ch;
+    min-width: 30ch;
+    text-align: center;
+}
+
+.listaEventos2 .evento .fechaEvento{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.listaEventos2 .evento .acciones .eliminar{
+    border: none;
+    padding: 10px;
+    background: rgb(255, 71, 114);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listaEventos2 .evento .acciones .eliminar:hover{
+    background: rgb(255, 114, 147);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+a{
+    color: white;
+}
